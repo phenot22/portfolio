@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>MyPortfolio</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h5>Hello, I'm Stephen John C. Marientes</h5>
+            <p>Aspiring Web Developer | Designer | Freelancer</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/me.jpg" alt="My Photo" class="profile-img" />
+            <p>
+                I’m a passionate BSIT student aspiring to become a skilled web developer. I have a growing interest in building fully responsive websites and am eager to deepen my knowledge of both front-end and back-end development. While I’m still gaining experience,
+                I’m committed to learning and continuously improving my skills to pursue a successful career in web development.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-summary">
+            <h3>Innovative Web Development Skills</h3>
+            <p class="text-muted">
+                As a passionate aspiring web developer, I have developed a strong foundation in web technologies including HTML, CSS, and JavaScript, which I utilize to create dynamic, responsive websites and applications. I am also proficient in front-end frameworks
+                such as React, and I am gaining experience in back-end technologies like PHP and Node.js for full-stack development.
+            </p>
+            <p class="text-muted">
+                My database management skills include proficiency with MySQL, which I use to build efficient and scalable web applications. I have experience with version control using Git and GitHub, and I'm comfortable using different development tools and environments
+                such as Visual Studio Code and Git Bash.
+            </p>
+            <p class="text-muted">
+                I also focus on creating user-friendly, responsive designs using frameworks like Bootstrap and CSS Grid. Along with my technical skills, I bring strong problem-solving abilities, effective teamwork, and excellent time management skills to all my projects.
+                I am eager to continue expanding my skillset in web development and software engineering.
+            </p>
+        </div>
+        <br><br>
+        <div class="circular-skills">
+            <div class="circle-skill">
+                <div class="circle" data-percent="90">
+                    <span>HTML</span>
+                    <strong>90%</strong>
+                </div>
+            </div>
+            <div class="circle-skill">
+                <div class="circle" data-percent="85">
+                    <span>CSS</span>
+                    <strong>85%</strong>
+                </div>
+            </div>
+            <div class="circle-skill">
+                <div class="circle" data-percent="75">
+                    <span>JavaScript</span>
+                    <strong>75%</strong>
+                </div>
+            </div>
+            <div class="circle-skill">
+                <div class="circle" data-percent="70">
+                    <span>PHP</span>
+                    <strong>70%</strong>
+                </div>
+            </div>
+            <div class="circle-skill">
+                <div class="circle" data-percent="70">
+                    <span>MySQL</span>
+                    <strong>70%</strong>
+                </div>
+            </div>
+            <div class="circle-skill">
+                <div class="circle" data-percent="80">
+                    <span>Responsive</span>
+                    <strong>80%</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br> <br> <br>
+    <section id="projects">
+        <h2>Projects</h2>
+        <br>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Transport Management System Screenshot" class="project-img">
+                <h3>Transport Management System</h3>
+                <p>A comprehensive web system that enables companies to manage trips, truckers, and delivery statuses efficiently through an intuitive dashboard.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Online Bus Reservation System Screenshot" class="project-img">
+                <h3>Online Bus Reservation System</h3>
+                <p>A dynamic platform where users can search, book, and manage bus reservations online, streamlining travel planning and ticketing.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Stock Control Management System Screenshot" class="project-img">
+                <h3>Stock Control Management System</h3>
+                <p>A system designed to track inventory levels, monitor stock movement, and generate reports to optimize warehouse management.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project4.jpg" alt="Clean Services System Screenshot" class="project-img">
+                <h3>Clean Services System</h3>
+                <p>A service booking application that allows users to request cleaning services, schedule appointments, and manage service history online.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Brgy. Canduman, Mandaue City, Cebu, Philippines</p>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> sjmarientes@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +63 912 345 6789</p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stephen John Marientes. All rights reserved.</p>
+
+        <div class="social-links">
+            <a href="" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    }
+</script>
